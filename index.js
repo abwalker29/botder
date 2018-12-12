@@ -20,6 +20,7 @@ app.post('/webhook', (req, res)=>{
     console.log('POST /');
     console.log("body: ");
     console.log(body);
+    res.send({status:'ok'})
 });
 
 app.listen(PORT, ()=>{
